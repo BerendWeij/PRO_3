@@ -10,6 +10,9 @@ public class SoundPlayer : MonoBehaviour
 	// we declareren de daadwerkelijke variabele die kan verwijzen naar methods
 	public SoundCompletedEventHandler SoundCompleted;
 
+	// SoundLoadedCallback
+	public delegate void SoundLoadedCallback(string data);
+
 	void Start(){
 
 	}
@@ -27,10 +30,17 @@ public class SoundPlayer : MonoBehaviour
 
 	IEnumerator WaitForCompletion() {
 		yield return new WaitForSeconds(3.0f);
-		SoundCompleted();
+		if(SoundCompleted != null)
+			SoundCompleted();
 	}
 
+	public void LoadSound(string url, SoundLoadedCallback callback){
 
+		// hele mooie logica om het bestand te laden
+
+		callback("dit is mijn geladen data");
+
+	}
 
 
 }

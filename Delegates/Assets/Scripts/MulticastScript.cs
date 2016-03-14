@@ -37,9 +37,9 @@ public class MulticastScript : MonoBehaviour
 		Debug.Log("Move up");
 	}
 
+	// @ voorbeeld van het afmelden bij een delegate -=
 	void OnMouseDown(){
 		MoveGameObject -= MoveUp;
 	}
-
-	// @ voorbeeld van het afmelden bij een delegate -=
+	
 }

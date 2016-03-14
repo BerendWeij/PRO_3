@@ -12,18 +12,25 @@ public class Listener : MonoBehaviour
 		soundPlayer = GameObject.Find ("SoundPlayer").GetComponent<SoundPlayer>();
 		soundPlayer.SoundCompleted += ContinueGame;
 
+
+
 	}
 
 	void ContinueGame()
 	{
 		print ("event is called, we should continue: " + this.name);
+		soundPlayer.SoundCompleted -= ContinueGame;
 	}
 
 	void OnMouseDown(){
 		soundPlayer.PlaySound();
+
+		soundPlayer.LoadSound("http://www.blabla.nl", SoundLoaded);
 	}
 
-
+	void SoundLoaded(string loadedData){
+		Debug.Log("data: " + loadedData);
+	}
 
 
 }
