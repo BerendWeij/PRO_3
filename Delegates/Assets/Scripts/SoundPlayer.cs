@@ -13,7 +13,6 @@ public class SoundPlayer : MonoBehaviour
 	// SoundLoadedCallback
 	public delegate void SoundLoadedCallback(string data);
 
-
 	void Start(){
 
 	}
