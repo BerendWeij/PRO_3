@@ -19,18 +19,15 @@ public class Listener : MonoBehaviour
 	void ContinueGame()
 	{
 		print ("event is called, we should continue: " + this.name);
-		soundPlayer.SoundCompleted -= ContinueGame;
 	}
 
 	void OnMouseDown(){
-		soundPlayer.PlaySound();
-
-		soundPlayer.LoadSound("http://www.blabla.nl", SoundLoaded);
+		//soundPlayer.PlaySound();
+		soundPlayer.LoadSound("http://www.blabla.nl/muziek.mp3", SoundLoaded);
 	}
 
 	void SoundLoaded(string loadedData){
-		Debug.Log("data: " + loadedData);
+		Debug.Log("de data die is geladen is: " + loadedData);
 	}
-
 
 }

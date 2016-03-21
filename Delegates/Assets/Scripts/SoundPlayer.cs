@@ -13,10 +13,11 @@ public class SoundPlayer : MonoBehaviour
 	// SoundLoadedCallback
 	public delegate void SoundLoadedCallback(string data);
 
+
 	void Start(){
 
 	}
-
+		
 	/*
 	 * Waarom zijn delegates & events handig?
 	 * - ze kunnen je helpen met het switchen tussen states
@@ -35,12 +36,12 @@ public class SoundPlayer : MonoBehaviour
 	}
 
 	public void LoadSound(string url, SoundLoadedCallback callback){
+		// mooie logica om het geluidsbestand te laden
+		// als hij klaar is voeren we de callback uit
 
-		// hele mooie logica om het bestand te laden
-
-		callback("dit is mijn geladen data");
-
+		callback("dit is het muziek bestand");
 	}
+
 
 
 }
