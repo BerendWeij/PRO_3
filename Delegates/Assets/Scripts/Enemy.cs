@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour {
 		TextureLoader textureLoader = new TextureLoader();
 		textureLoader.Load("http://www.studiozoetekauw.nl/wp-content/uploads/2014/09/liveStudio.jpg",
 		                   TextureLoaded,
-		                   this);
+		                   this); // this verwijst naar dit gameobject
 	}
 
 	void TextureLoaded(Texture texture){
