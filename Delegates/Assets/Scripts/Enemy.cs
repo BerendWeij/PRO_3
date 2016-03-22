@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour {
 	}
 
 	void GetTexture(){
+		// we kunnen de textureloader nu makkelijk hergebruiken. TextureLoader weet helemaal niets van Enemy.cs
 		TextureLoader textureLoader = new TextureLoader();
 		textureLoader.Load("http://www.studiozoetekauw.nl/wp-content/uploads/2014/09/liveStudio.jpg",
 		                   TextureLoaded,
