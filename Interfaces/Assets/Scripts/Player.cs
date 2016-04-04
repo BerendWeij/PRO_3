@@ -14,7 +14,7 @@ public class Player : MonoBehaviour {
 		shotGun = GetComponent<ShotGun>();
 		nuclearMissileLauncher = GetComponent<NuclearMissileLauncher>();
 
-		// we laten currentWeapon verwijzen naar de handGun
+		// we laten currentWeapon verwijzen naar de shotGun
 		currentWeapon = shotGun;
 
 		// volgende week gaan we deze code meer loosely coupled maken. Dan ga je echt de kracht van interfaces zien

@@ -7,6 +7,7 @@ public class TextureLoader {
 
 	// COMMENT BEREND: je zou ook nog een errorCallback kunnen maken als parameter. Deze wordt uitgevoerd als er een error was
 
+
 	/// <summary>
 	/// Load the specified url and call succesCallback Method when ready
 	/// </summary>
