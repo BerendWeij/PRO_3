@@ -8,7 +8,7 @@ using System.Collections;
 public class GenericClass<T> {
 
 	public string name = "";
-	private T value;
+	public T value;
 
 	public T GetValue() {
 		return value;
