@@ -17,8 +17,6 @@ public class Player : MonoBehaviour {
 		// we laten currentWeapon verwijzen naar de shotGun
 		currentWeapon = shotGun;
 
-		// volgende week gaan we deze code meer loosely coupled maken. Dan ga je echt de kracht van interfaces zien
-
 		// waarom gebruiken we een interface?
 		// omdat Classes alleen maar van elkaar mogen weten wat je bij elkaar mag doen. Niet 'hoe' het gebeurd.
 		// Standaard regel: Program to an interface, not an implementation
