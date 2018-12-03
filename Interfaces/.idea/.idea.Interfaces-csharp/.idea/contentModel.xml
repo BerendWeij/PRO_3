@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-vs.csproj" t="IncludeRecursive" />
+      <e p="Assets/Scripts" t="Include">
+        <e p="Interfaces" t="Include">
+          <e p="IWeapon.cs" t="Include" />
+        </e>
+        <e p="Player.cs" t="Include" />
+        <e p="Weapons" t="Include">
+          <e p="HandGun.cs" t="Include" />
+          <e p="NuclearMissileLauncher.cs" t="Include" />
+          <e p="ShotGun.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Interfaces-csharp.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_Interfaces-csharp.2062881711.00" t="ExcludeRecursive" />
+  </component>
+</project>
